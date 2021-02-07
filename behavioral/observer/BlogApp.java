@@ -9,7 +9,12 @@ public class BlogApp {
         john.subscribeTo(techBlog);
         megan.subscribeTo(techBlog);
 
-        Post post = new Post("Kubernetes and Service mesh with Istio");
-        techBlog.publish(post);
+        Post post1 = new Post("Kubernetes and Service mesh with Istio");
+        techBlog.publish(post1);
+        System.out.println();
+
+        megan.unsubscribeFrom(techBlog);
+        Post post2 = new Post("How to use Terraform in AWS ?");
+        techBlog.publish(post2);
     }
 }

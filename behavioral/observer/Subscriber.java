@@ -17,6 +17,7 @@ public class Subscriber implements Observer {
     public void unsubscribeFrom(Blog blog) {
         blog.detachObserver(this);
         this.blog = null;
+        System.out.println(this.name+" You have successfully unsubscribed from our blog updates, you won't get any mails now !");
     }
 
 
