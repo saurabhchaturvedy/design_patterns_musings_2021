@@ -1,0 +1,13 @@
+ability to add new operations to existing object structures without modifying the structures. It is one way to follow the open/closed principle.
+
+every time we update an interface with a new method , every class needs to add an impl for it
+
+C++/Java support single dispatch by default
+
+double dispatch is not supported out of the box
+
+
+if we dont use visitor pattern , then we will need to add method for each kind of offer on the credit card interface , which also breaks the implementation .
+
+
+when to use : when underlying datastructure usually remains same , but operations on it change from time to time
